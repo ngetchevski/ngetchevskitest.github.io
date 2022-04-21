@@ -234,7 +234,7 @@
 /* Resume End */
 
 /* Media Start */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .gallery-img{
     max-width: 150px;
     max-height: 250px;
