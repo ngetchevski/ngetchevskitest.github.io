@@ -78,7 +78,7 @@ html{
 }
 .circle{
   grid-area: circle;
-  /* justify-self: center; */
+  justify-self: center;
   background-color:#5B5754;
   box-shadow: 0px 0px 15px 0px #17161694;
   width: 152px;
@@ -87,7 +87,6 @@ html{
   outline: 3px solid #ffffff;
   position: absolute;
   margin-top: 1px;
-  margin-left: 40%;
 }
 .circle img{
   grid-area: circle;
@@ -361,7 +360,6 @@ input[type=submit]:hover {
   .circle{
     width: 14vh;
     height: 14vh;
-    margin-left: 47.7%;
   }
   .circle img{
     margin-top: -0.5vh;
@@ -411,13 +409,14 @@ input[type=submit]:hover {
   .portrait img{
     width: 500px;
     height: 800px;
-    margin-left: -7em;
+    position: absolute;
+    margin-left: 7em;
     box-shadow: 0px 0px 15px 0px #17161694;
   }
   .portrait h3{
     font-size: 1.5em;
     margin-top: 37em;
-    margin-left: -14em;
+    margin-left: -14.5em;
   }
   .portrait p{
     line-height: 2em;
@@ -465,6 +464,7 @@ input[type=submit]:hover {
     text-align: center;
     position: relative;
     top: 1.2em;
+    right: 0.3em;
     font-family: 'Gotham-Black';
   }
 }
