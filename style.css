@@ -13,6 +13,9 @@
 html{
   scroll-behavior: smooth;
 }
+.title{
+  font-family: 'Blenda Script';
+}
 /* Nav Bar Start */
 .top-bar{
    background-color:#5B5754;
@@ -45,6 +48,7 @@ html{
 }
 .portfolio a:hover{
   opacity:50%;
+  transition:0.2s ease-in-out;
 }
 .about{
   grid-area: about;
@@ -66,6 +70,7 @@ html{
 }
 .about a:hover{
   opacity:50%;
+  transition:0.2s ease-in-out;
 }
 .circle{
   grid-area: circle;
@@ -109,6 +114,7 @@ html{
 }
 .resume a:hover{
   opacity:50%;
+  transition:0.2s ease-in-out;
 }
 .contact{
   grid-area: contact;
@@ -130,6 +136,7 @@ html{
 }
 .contact a:hover{
   opacity:50%;
+  transition:0.2s ease-in-out;
 }
 /* Nav Bar End */
 
@@ -230,22 +237,55 @@ html{
 .resume-container img{
   justify-self: center;
   position: absolute;
-  margin-left: 12em;
+  margin-left: 12.15em;
   margin-top: 4em;
   box-shadow: 0px 0px 15px 0px #17161694;
+}
+/* Resume End */
+
+/* Contact Start */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 0px;
+  box-shadow: 0px 0px 15px 0px #17161694;
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+input[type=submit] {
+  background-color: #5B5754;
+  color: white;
+  padding: 12px 20px;
+}
+input[type=submit]:hover {
+  background-color: #9b9691;
+}
+.contact-container form{
+  margin: 15em;
+  margin-top: 7vh;
+  box-shadow: 0px 0px 15px 0px #17161694;
+  padding: 20px;
+}
+.contact-container h5{
+  text-align: center;
+  font-family: 'Gotham-Black';
+  margin-top: 120px;
+  font-size: 3em;
+  margin-top: 20em;
+  margin-bottom: 1em;
 }
 .bottom-bar{
   width: 100%;
   height: 15vh;
   position: absolute;
   align-self: baseline;
-  margin-top: 900px;
+  margin-top: 0vh;
   background-color: #5B5754;
 }
-/* Resume End */
+/* Contact End */
 
 /* Media Start */
-@media (max-width: 1000px) {
+@media (max-width: 700px),(max-width: 1000px) {
   .container{
     display: grid;
       grid-template-columns: 1fr .5fr 1fr ;
@@ -378,7 +418,27 @@ html{
   }
   .bottom-bar{
     height: 4vh;
-    margin-top: 1200px;
+    margin-top: -100px;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    font-size: 0.75em;
+    padding: 22px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+  }
+  input[type=submit] {
+    margin-left: 9.5vh;
+    font-size: 1em;
+  }
+  .contact-container form{
+    margin: 6em;
+    font-size: 2em;
+    margin-top: 3vh;
+  }
+  .contact-container h5{
+    font-size: 2.5em;
+    margin-top: 32em;
   }
 }
 /* Media End */
