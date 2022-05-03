@@ -290,6 +290,9 @@ input[type=submit]:hover {
   font-family: 'Gotham-Black';
   color: white;
 }
+.top a{
+  color: white;
+}
 .top a:hover{
   opacity:50%;
   transition:0.2s ease-in-out;
@@ -429,8 +432,7 @@ input[type=submit]:hover {
     width: 800px;
   }
   .bottom-bar{
-    height: 4vh;
-    margin-top: -100px;
+    height: 6vh;
   }
   input[type=text], select, textarea {
     width: 100%;
@@ -451,6 +453,13 @@ input[type=submit]:hover {
   .contact-container h5{
     font-size: 2.5em;
     margin-top: 32em;
+  }
+  .top{
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    top: 1.2em;
+    font-family: 'Gotham-Black';
   }
 }
 /* Media End */
