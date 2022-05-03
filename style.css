@@ -78,7 +78,7 @@ html{
 }
 .circle{
   grid-area: circle;
-  justify-self: center;
+  /* justify-self: center; */
   background-color:#5B5754;
   box-shadow: 0px 0px 15px 0px #17161694;
   width: 152px;
@@ -87,6 +87,7 @@ html{
   outline: 3px solid #ffffff;
   position: absolute;
   margin-top: 1px;
+  margin-left: 44%;
 }
 .circle img{
   grid-area: circle;
@@ -360,6 +361,7 @@ input[type=submit]:hover {
   .circle{
     width: 14vh;
     height: 14vh;
+    margin-left: 37.7%;
   }
   .circle img{
     margin-top: -0.5vh;
